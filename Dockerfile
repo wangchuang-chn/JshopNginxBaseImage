@@ -4,6 +4,7 @@ MAINTAINER wangchuang<mail.wangchuang@gmail.com>
 
 EXPOSE 80 443
 COPY nginx.repo /etc/yum.repos.d/
+COPY start.sh /start.sh
 
 
 RUN yum-config-manager --enable nginx-stable \
